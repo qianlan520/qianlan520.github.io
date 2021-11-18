@@ -245,7 +245,7 @@ mark {
 }
 
 .text-color {
-    color: #fff !important;
+    color: #0f9d58 !important;
 }
 
 .white-color {
@@ -257,8 +257,8 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #ff0000 50%, #0f9d58 190%);
-    opacity: 1;
+    background: linear-gradient(to right, #ff0000 20%, #FF4500 70%);
+    opacity: 0.8;
 }
 
 .sidenav-overlay {
@@ -1058,7 +1058,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
+    color: #4169E1;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
@@ -1066,17 +1066,17 @@ article .article-tags .chip {
 
 #artDetail .tag_share .article-tag .chip:hover {
     color: #fff;
-    background: #42b983;
+    background: #4169E1;   /*/标签*/
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #4169E1;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #4169E1;
     font-weight: 500;
 }
 
@@ -1095,7 +1095,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #FF6347;
     text-decoration: underline;
 }
 
@@ -1158,7 +1158,7 @@ article .article-tags .chip {
 
 #artDetail .reprint a {
     font-size: 1.05rem;
-    color: #42b983;
+    color: #FF7F50;        /*//文章作者链接声明/*/
     font-weight: 500;
 }
 
