@@ -4,50 +4,11 @@
   
     
     <entry>
-      <title>华为交换机</title>
-      <link href="/zhs/aa9c0c7c.html"/>
-      <url>/zhs/aa9c0c7c.html</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://imgtu.com/i/opBajS"><img src="https://z3.ax1x.com/2021/11/23/opBajS.png" alt="两台交换机连接"></a></p><pre class="line-numbers language-bash"><code class="language-bash">sw1的配置<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>language-mode Chinese Change language mode, confirm? <span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span> yNov 23 2021 13:49:30-08:00 Huawei %%01CMD/4/LAN_MODE<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">[</span>0<span class="token punctuation">]</span>:The user chose Y when deciding whether to change the language mode.提示：改变语言模式成功。<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>sys进入系统视图，键入Ctrl+Z退回到用户视图。<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>undo info-center <span class="token function">enable</span> 提示：信息中心被关闭。    <span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>sysname sw1          //改名为sw1<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>vlan 2                  //创建vlan2<span class="token punctuation">[</span>sw1-vlan2<span class="token punctuation">]</span>q    <span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>interface Vlanif 2    <span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>ip address 192.168.1.1 24    //配置ip地址和子网掩码<span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>q<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>int g0/0/1                 //进入0/0/1这个端口<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port link-type trunk      //设置为trunk模式     <span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk pvid vlan 2    //设置端口的默认vlan标签    <span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk allow-pass vlan all<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>q    <span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>user-interface vty 0 4         //进入虚拟用户终端接口<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>authentication-mode password     //设置认证模式为密码验证<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>set authentication password cipher pikaq        //设置密码为密文格式:“pikaq”<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>user privilege level 3        //设置用户权限等级为3//华为user，privilege，level 3级别含义：交换机有4级别，0123 0参观，1监控，2系统，3管理，（所有命令<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>q<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>q<span class="token operator">&lt;</span>sw1<span class="token operator">></span>save将把当前的配置保存到存储设备中。是否继续？<span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span>y提示：请输入文件名（*.cfg，*.zip）<span class="token punctuation">[</span>vrpcfg.zip<span class="token punctuation">]</span>：正在将运行时的配置写入到存储设备0。保存配置成功。<span class="token operator">&lt;</span>sw1<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash">sw1的配置<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>language-mode Chinese Change language mode, confirm? <span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span> yNov 23 2021 13:49:30-08:00 Huawei %%01CMD/4/LAN_MODE<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">[</span>0<span class="token punctuation">]</span>:The user chose Y when deciding whether to change the language mode.提示：改变语言模式成功。<span class="token operator">&lt;</span>Huawei<span class="token operator">></span>sys进入系统视图，键入Ctrl+Z退回到用户视图。<span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>undo info-center <span class="token function">enable</span> 提示：信息中心被关闭。    <span class="token punctuation">[</span>Huawei<span class="token punctuation">]</span>sysname sw1          //改名为sw1<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>vlan 2                  //创建vlan2<span class="token punctuation">[</span>sw1-vlan2<span class="token punctuation">]</span>q    <span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>interface Vlanif 2    <span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>ip address 192.168.1.1 24    //配置ip地址和子网掩码<span class="token punctuation">[</span>sw1-Vlanif2<span class="token punctuation">]</span>q<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>int g0/0/1                 //进入0/0/1这个端口<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port link-type trunk      //设置为trunk模式     <span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk pvid vlan 2    //设置端口的默认vlan标签    <span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>port trunk allow-pass vlan all<span class="token punctuation">[</span>sw1-GigabitEthernet0/0/1<span class="token punctuation">]</span>q    <span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>user-interface vty 0 4         //进入虚拟用户终端接口<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>authentication-mode password     //设置认证模式为密码验证<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>set authentication password cipher pikaq        //设置密码为密文格式:“pikaq”<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>user privilege level 3        //设置用户权限等级为3//华为user，privilege，level 3级别含义：交换机有4级别，0123 0参观，1监控，2系统，3管理，（所有命令<span class="token punctuation">[</span>sw1-ui-vty0-4<span class="token punctuation">]</span>q<span class="token punctuation">[</span>sw1<span class="token punctuation">]</span>q<span class="token operator">&lt;</span>sw1<span class="token operator">></span>save将把当前的配置保存到存储设备中。是否继续？<span class="token punctuation">[</span>Y/N<span class="token punctuation">]</span>y提示：请输入文件名（*.cfg，*.zip）<span class="token punctuation">[</span>vrpcfg.zip<span class="token punctuation">]</span>：正在将运行时的配置写入到存储设备0。保存配置成功。<span class="token operator">&lt;</span>sw1<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>导航</title>
-      <link href="/zhs/eaabd000.html"/>
-      <url>/zhs/eaabd000.html</url>
-      
-        <content type="html"><![CDATA[<p>设计导航 <a href="http://chuangzaoshi.com/">http://chuangzaoshi.com/</a></p><p>​     图片  <a href="https://tinypng.com/">https://tinypng.com/</a></p><p>​                <a href="https://imgtu.com/">https://imgtu.com/</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一台交换机</title>
-      <link href="/zhs/4699a2ed.html"/>
-      <url>/zhs/4699a2ed.html</url>
-      
-        <content type="html"><![CDATA[<p> <a href="https://imgtu.com/i/IIy8sS"><img src="https://z3.ax1x.com/2021/11/18/IIy8sS.png" alt="交换机"></a></p><pre class="line-numbers language-bash"><code class="language-bash">1.初始化交换机Switch<span class="token operator">></span>enable                  //进入特权模式Switch<span class="token comment" spellcheck="true">#erase startup-config                      //擦除当前配置</span>Erasing the nvram filesystem will remove all configuration files<span class="token operator">!</span> Continue? <span class="token punctuation">[</span>confirm<span class="token punctuation">]</span><span class="token punctuation">[</span>OK<span class="token punctuation">]</span>               //根据提示，按回车确认Erase of nvram: complete                       //系统提示配置擦除成功%SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvramSwitch<span class="token comment" spellcheck="true">#reload                    //加载出场配置文件</span>Proceed with reload? <span class="token punctuation">[</span>confirm<span class="token punctuation">]</span>       //根据提示，按回车确认Switch<span class="token comment" spellcheck="true">#show running-config          //查看当前的配置信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-basic"><code class="language-basic"><span class="token number">2.</span>更改交换机名Switch<span class="token operator">></span>enable          <span class="token operator">/</span><span class="token operator">/</span>进入特权模式Switch#config terminal     <span class="token operator">/</span><span class="token operator">/</span>进入全局模式Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span>#hostname sw1          <span class="token operator">/</span><span class="token operator">/</span>给交换机改名为sw1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash">3.配置端口速度和双工方式Switch<span class="token operator">></span>enable          //进入特权模式Switch<span class="token comment" spellcheck="true">#config terminal     //进入全局模式</span>Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#interface fastEthernet 0/1        //配置接口，该命令可缩写成int f0/1</span>Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#speed 100        //设置该速率为100M</span>Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#duplex full      //设置全双工方式</span>Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#end              //退回特权模式</span>Switch<span class="token comment" spellcheck="true">#write                 //保存配置文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash"> 4.设置telnet虚拟终端接入数量Switch<span class="token operator">></span>enable          //进入特权模式Switch<span class="token comment" spellcheck="true">#config terminal     //进入全局模式</span>Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#line vty 0 4        //允许虚拟接口0~4共5个用户接入</span>Switch<span class="token punctuation">(</span>config-line<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#no login      //设置为登陆不需要密码验证</span>Switch<span class="token punctuation">(</span>config-line<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#end           //退回特权模式</span>Switch<span class="token comment" spellcheck="true">#write                    //保存配置文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash">switch<span class="token comment" spellcheck="true">#con t </span>Switch<span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#int vlan 1    //进入vlan虚接口模式</span>Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#ip add 192.168.10.1 255.255.255.0    //IP地址</span>Switch<span class="token punctuation">(</span>config-if<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#no shutdown          //启用虚接口</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>878 标题颜色</p><p><a href="https://imgtu.com/i/IIH4SO"><img src="https://z3.ax1x.com/2021/11/18/IIH4SO.png" alt="IIH4SO.png"></a></p><pre><code></code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>RGB颜色查询对照表</title>
+      <title>HLTV最新世界排名：G2来到第7</title>
       <link href="/zhs/ece353b8.html"/>
       <url>/zhs/ece353b8.html</url>
       
-        <content type="html"><![CDATA[<p><a href="http://www.mgzxzs.com/sytool/se.htm">RGB颜色查询对照表 (mgzxzs.com)</a></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本文来源：5EPlay</p><p>作者：Clizumy</p></blockquote><p>PGL安特卫普Major圆满结束，HLTV公布了最新一周的世界排名</p><img src="https://s1.ax1x.com/2022/06/11/Xg9cXd.png" alt="" border="0" /><p>FaZe、NaVi和ENCE作为本届Major的四强队伍，继续巩固自己前三甲的位置。其中FaZe已达到1000分满分。而另一支四强队伍Spirit通过他们惊人的表现一举上升八位，来到第六。</p><p>Heroic和NIP都进入了Major淘汰赛段，他们各自提升两位，位居第四、第五。FURIA也上升了三位。</p><p>另一方面，毁掉无数人作业的G2、Cloud9、Vitality只能接受排名下滑的命运；A队、VP也跌出了前十。</p>]]></content>
       
       
       
@@ -56,11 +17,50 @@
     
     
     <entry>
-      <title>FAZE!!!!!!!!!!!!!!!</title>
+      <title>broky在IEM卡托维兹2022中斩获生涯第一个MVP</title>
+      <link href="/zhs/85deb299.html"/>
+      <url>/zhs/85deb299.html</url>
+      
+        <content type="html"><![CDATA[<p>虽然带着替补出场，但这位拉脱维亚狙击手还是打出了他在线下赛中最好的数据并带领队伍一路拿下冠军。</p><p>年轻的broky在本次IEM卡托维兹中发挥极其出色，不仅成为了冠军还拿到了MVP奖牌。这位拉脱维亚狙击手在FaZe的队内数据中一直名列前茅，他们在总决赛中惊险的击败了G2成为今年第一个大型线下赛的冠军。</p><p>这是broky的第一个MVP，而且他在今年同样首次进入了HLTV的TOP榜，被评为了TOP20的选手。</p><p><a href="https://imgtu.com/i/Xgp0zQ"><img src="https://s1.ax1x.com/2022/06/11/Xgp0zQ.jpg" alt="" border="0" /></a></p><p>broky大量的数据都处于领先地位，包括KD（+134），每回合击杀（0.84）和Rating（1.30），同时他也和huNter一起成为了赢下10次“1 vs X”残局的选手。</p><p>他在这场赛事中很多个BO3打出了出色的数据，包括在对阵Liquid和NAVI的时候，其中最好的一次是在四分之一决赛中对决Gambit时的1.61的恐怖Rating。</p><p>值得一提的是，broky的MVP奖牌最大的竞争者是Niko，但是这位波黑步枪手在playoff阶段完全没有统治战场的影响力，这严重影响了他参选MVP。波黑双人组的huNter也值得一提，因为他在playoff中完全打出了自己的节奏，并且在总决赛输了的情况下依然是全场数据最好的一人。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>队伍胜率保证！ropz荣膺EPL S15 MVP奖章</title>
+      <link href="/zhs/eaabd.html"/>
+      <url>/zhs/eaabd.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本文来源：5EPlay</p><p>作者：LAN_DOG</p></blockquote><p>为期一个月的EPL S15已经全部结束，最终FaZe Clan在决赛3-1击败ENCE成功捧杯，HLTV也随之公布了本届赛事的MVP，ropz凭借自己赛事中的稳定发挥保持了“入队以来赛事100%胜率”，也获得了他职业生涯中第二个MVP奖章。</p><p><a href="https://imgtu.com/i/XczAW4"><img src="https://s1.ax1x.com/2022/06/11/XczAW4.jpg" alt="" border="0" /></a></p><p>ropz在本届赛事中砍下了平均1.16的rating，获得了73.4%的KAST和9个关键残局。在FaZe对阵Vitality和FURIA以及Gambit的比赛中发挥了至关重要的作用。纵观整届赛事，ropz在面对Vitality以及Gambit时都斩获过2.01以及1.69的恐怖rating。</p><p>值得一提的是，该枚MVP奖章是ropz职业生涯中第二枚MVP奖章，他的首枚MVP奖章也是在EPL赛事中获得的，当时他在karrigan的带领下帮助MOUZ成功获得EPL S10的冠军。</p><p><a href="https://imgtu.com/i/Xczop4"><img src="https://s1.ax1x.com/2022/06/11/Xczop4.jpg" alt="" border="0" /></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IEM卡托维兹：经此一役，天下谁人敢问君！FaZe 3-0战胜G2勇夺冠军！</title>
+      <link href="/zhs/eaabd000.html"/>
+      <url>/zhs/eaabd000.html</url>
+      
+        <content type="html"><![CDATA[<p>在经历了14天的拼搏后，本次卡托终于迎来了总决赛，带着替补的FaZe从play-in阶段一路战胜了无数强敌来到了这里，而他们的对手G2更是处于一个前所未有的强大时刻。双方的实力无需多言，相信所有观众都已经了如指掌，究竟从淘汰赛开始每一场比赛都无比精彩的IEM卡托维兹2022会给我们呈现出怎样的终局之战，让我们拭目以待。</p><p><strong>地图BP（FaZe选择Inferno，G2选择Mirage，FaZe选择Dust2，G2选择Ancient，图五Nuke）</strong></p><p><a href="https://imgtu.com/i/XgSy4O"><img src="https://s1.ax1x.com/2022/06/11/XgSy4O.jpg" alt="" border="0" /></a></p><p><strong>图一Inferno（G2 15-19 FaZe）</strong></p><p>FaZe在上半场失利的情况下连追八个赛点，ropz在A点完成五杀，以一枪沙鹰爆头Niko将比赛拖入加时。加时赛中4-0赢下本场比赛。</p><p><strong>图一数据</strong></p><p><a href="https://imgtu.com/i/XgSg8e"><img src="https://s1.ax1x.com/2022/06/11/XgSg8e.jpg" alt="" border="0" /></a></p><p><strong>图二Mirage（FaZe 31-27 G2）</strong></p><p>第五个加时，开局broky就完成精彩的1V2残局，FaZe突然又找到了进攻的感觉，开始疯狂提速A点，G2出现失误，比分来到30-27，FaZe再次手握3个赛点。最后一回合，jks再次站了出来，一个精彩的1V2，终结了这场旷世之战，最终FaZe以31-27的比分战胜了对手。</p><p><strong>图二数据</strong></p><p><a href="https://imgtu.com/i/XgShDI"><img src="https://s1.ax1x.com/2022/06/11/XgShDI.jpg" alt="" border="0" /></a></p><p><strong>图三Dust2（FaZe 16-14 G2）</strong></p><p>开局FaZe通过jks包点守包双杀赢下手枪局，后续G2钢枪无果，比分来到3-0。最后一回合，G2的经济只够起到两把AK，他们选择爆弹打A小，但FaZe的道具很足，G2在A小寸步难行，broky三杀帮助FaZe以16-14的比分战胜了对手。</p><p><strong>图三数据</strong></p><p><a href="https://imgtu.com/i/XgSIVP"><img src="https://s1.ax1x.com/2022/06/11/XgSIVP.jpg" alt="" border="0" /></a></p><p><strong>全场数据</strong></p><p><a href="https://imgtu.com/i/XgST58"><img src="https://s1.ax1x.com/2022/06/11/XgST58.jpg" alt="" border="0" /></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无惧风雨摘星辰 FaZe夺冠PGL安特卫普Major</title>
       <link href="/zhs/815639.html"/>
       <url>/zhs/815639.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本文来源：5EPlay</p><p>作者：LAN_DOG</p></blockquote><p>战舰冲风起怒涛，踏破银河凌九霄。FaZe Clan站在PGL安特卫普Major决赛的舞台上，他们无惧风雨、一往无前，经历图一Inferno的加时大战后，他们在Nuke上稳扎稳打，最终捧得冠军奖杯！</p><p>FaZe 2-0 NaVi（Inferno 19-16；Nuke 16-10）</p><p><strong>图一：Inferno</strong></p><p>图一是Inferno，NaVi先做防守，手枪局双方稳得出奇，最终FaZe凭借拿下连接首杀得分。NaVi刚枪无果，FaZe先取3-0领先。第一个长枪局，FaZe默认后最后一波打B，s1mple虽然完成多杀但是FaZe的补枪质量非常高，不仅如此今日FaZe的枪也架得很死，完全不给对手机会。6-0后，NaVi叫出暂停但依旧不能解决问题，随着FaZe众人手感打开，在进入包点的路上他们已经无人可挡。终于，在第九回合s1mple起到大狙，配合electroNic的A1掩护他们成功拿到首分。有狙击枪的NaVi追回些局势。关键时刻FaZe半起局飞二楼，闪光效果出色，帮助他们半场10-5领先。</p><p>来到下半场，NaVi手枪局慢控图，但是FaZe的手枪不给你机会，一波ACE点燃了现场气氛。NaVi直接刚枪打B，收下残局之后下一分又凭借抱团摸连接拿分把FaZe打入ECO。来到长枪局，NaVi先拿首杀，Twistzz在连接双杀也给予回应，乱战之后是b1t和Twistzz的1v1，时间紧急的情况下b1t顶住压力打赢单挑帮助队伍继续追分。</p><p>FaZe这边也终于等到自己的狙击枪，ropz接住第一个人头后FaZe迅速完成人数互换重新拿分。来到关键局，NaVi集合一波打B，rain接住三人但Perfecto和b1t站了出来完成了残局追平比分。手感起来的b1t持续为NaVi带来关键击杀，打崩FaZe经济的他们率先拿到赛点，但是karrigan和ropz拒绝就这么输掉图一，一人一回合硬生生把FaZe抗进加时赛。</p><p>来到加时赛，karrigan继续发挥作用，FaZe防守2-1开。再次来到进攻，FaZe果断直接爆A，二楼karrigan找到关键击杀，FaZe收获赛点。最后的关键局，经典再现！20秒转点成功，ropz断掉最关键的人头，FaZe拿下图一！</p><p><a href="https://imgtu.com/i/XcOLvt"><img src="https://s1.ax1x.com/2022/06/11/XcOLvt.jpg" alt="" border="0" /></a></p><p><strong>图二：Nuke</strong></p><p>图二来到Nuke，FaZe先做防守方。手枪局rain再次发挥，打掉关键人头后FaZe获得首分。全ECO一局后NaVi起到步枪，electroNic在K1找到首杀为NaVi首开纪录。但强硬的内场防守和rain火热的状态把NaVi再次打入ECO。养好经济后NaVi连续提内场，不过rain的灵性混烟拒绝了NaVi的连续拿分，不仅如此，rain在外场控制上持续压制电子哥。8-2之后，NaVi叫出暂停可s1mple的英雄大狙被broky单防，FaZe持续扩大优势。NaVi在14回合通过提内场拿分，FaZe经济见底翻盘失败，半场10-5领先。</p><p>来到下半场，FaZe一路开下K1打赢了所有对枪，但是b1t的沙鹰发挥让局势再次扑朔迷离。ECO之后再次来到长枪局，rain单摸K1击杀Boombl4，FaZe迅速形成优势补枪循环拿下关键一分。NaVi这边加强内场防守追回些分数，紧接着FaZe又通过内场RUSH拿分，稳住局势的他们持续给到NaVi内场压力，在rain火热手感加持下FaZe来到14-10。</p><p>NaVi选择刚枪，但开局就被ropz混死正门s1mple，稳健的FaZe四人抱团摸K1，合理、快速的补枪让他们成功拿到赛点。经济见底的NaVi只能继续强起，枪械劣势的情况下他们无力回天。<strong>FaZe Clan，Our PGL Major Champion！</strong></p><p><a href="https://imgtu.com/i/XcXAK0"><img src="https://s1.ax1x.com/2022/06/11/XcXAK0.jpg" alt="" border="0" /></a></p>]]></content>
       
       
       
@@ -69,20 +69,7 @@
     
     
     <entry>
-      <title>区块链</title>
-      <link href="/zhs/89374c81.html"/>
-      <url>/zhs/89374c81.html</url>
-      
-        <content type="html"><![CDATA[<p>区块链是一个信息技术领域的术语。从本质上讲，它是一个共享数据库，存储于其中的数据或信息，具有“不可伪造”“全程留痕”“可以追溯”“公开透明”“集体维护”等特征。基于这些特征，区块链技术奠定了坚实的“信任”基础，创造了可靠的“合作”机制，具有广阔的运用前景。</p><p>区块链从科技层面来看，区块链涉及数学、密码学、互联网和计算机编程等很多科学技术问题。从应用视角来看，简单来说，区块链是一个分布式的共享账本和数据库，具有去中心化、不可篡改、全程留痕、可以追溯、集体维护、公开透明等特点。这些特点保证了区块链的“诚实”与“透明”，为区块链创造信任奠定基础。而区块链丰富的应用场景，基本上都基于区块链能够解决信息不对称问题，实现多个主体之间的协作信任与一致行动 。</p><p>区块链是分布式数据存储、点对点传输、共识机制、加密算法等计算机技术的新型应用模式。区块链（Blockchain），是比特币的一个重要概念，它本质上是一个去中心化的数据库，同时作为比特币的底层技术，是一串使用密码学方法相关联产生的数据块，每一个数据块中包含了一批次比特币网络交易的信息，用于验证其信息的有效性（防伪）和生成下一个区块 。</p><p><code>2008年11月1日</code>由中本聪第一次提出了区块链的概念，区块链起源于比特币，中本聪(Satoshi Nakamoto)在《比特币:一种点对点的电子现金系统》一文中阐述了基于P2P网络技术、加密技术、时间戳技术、区块链技术等的电子现金系统的构架理念，这标志着比特币的诞生。两个月后理论步入实践，</p><p><code>2009年1月3日</code>第一个序号为0的创世区块诞生。几天后<code>2009年1月9</code>日出现序号为1的区块，并与序号为0的创世区块相连接形成了链，标志着区块链的诞生</p><p><code>2019年1月10日</code>，国家互联网信息办公室发布《区块链信息服务管理规定》。<code>2019年10月24日</code>，在中央政治局第十八次集体学习时，习近平总书记强调，“把区块链作为核心技术自主创新的重要突破口”“加快推动区块链技术和产业创新发展”。“区块链”已走进大众视野，成为社会的关注焦点</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>猫</title>
+      <title>“猫”（测试）</title>
       <link href="/zhs/85deb210.html"/>
       <url>/zhs/85deb210.html</url>
       
@@ -95,11 +82,11 @@
     
     
     <entry>
-      <title>Maior</title>
+      <title>舰船轰鸣 响彻云霄 FaZe成功夺冠EPL S15</title>
       <link href="/zhs/feb36c54.html"/>
       <url>/zhs/feb36c54.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本文来源：5EPlay</p><p>作者：LAN_DOG</p></blockquote><p>EPL S15的最终决赛，对阵双方是黑马ENCE和银河战舰FaZe，参加比赛的选手们状态都在线，为我们奉献出了精彩的对局。经历4图大战，最终FaZe凭借更为出色的临场调整能力和更细节的配合成功夺冠！****</p><p><strong>ENCE 1-3 FaZe（Vertigo 11-16；Overpass 19-16；Mirage 9-16；Dust2 12-16）</strong></p><p><a href="https://imgtu.com/i/XcvucR"><img src="https://s1.ax1x.com/2022/06/11/XcvucR.png" alt="" border="0" /></a></p><p><strong>图一：Vertigo</strong></p><p>决赛的图一来到Vertigo，ENCE先做进攻方。手枪局的失利让ENCE在开局就丧失主动权，但是他们没有被落后的比分束缚。进攻风格果断的他们用漂亮的快攻稳住局势没有让比分逐渐拉开，为了不拖节奏hades都是起SG553而不是大狙。虽然FaZe接连打出精彩的回防，但是每回合都能进入包点下包让ENCE几乎每个回合都是长枪局。maden数次配合Snappi的闪光击杀karrigan让FaZe的A点经常压力拉满，也是A点防守的漏洞让ENCE半场将比分差距缩小至1分。</p><p>来到下半场，ENCE通过手枪局的胜利成功反超比分，但是进入长枪局FaZe也用压迫力十足的A点进攻重新拿分。关键时刻，FaZe都是通过B点的阵地攻防拿下分数将ENCE打入ECO，收下ECO后，FaZe将比分拉开到14-11。随后karrigan下达一波提A的指令一波变速拿下赛点。纵使maden砍下图一全场最高的击杀数也无力回天，最终FaZe以16-11的比分赢下图一。</p><p><a href="https://imgtu.com/i/XcvlB6"><img src="https://s1.ax1x.com/2022/06/11/XcvlB6.png" alt="" border="0" /></a></p><p><strong>图二：Overpass</strong></p><p>来到图二Overpass，FaZe先做进攻方。输掉手枪局和刚枪局后FaZe纯E局的沙鹰和TEC-9打出了奇效。翻盘成功后FaZe连续拿分，第七回合双方带上大狙的长枪局正式开始。铁人dycha在一层硬是扛了三颗手雷没死，随后Snappi在工地逮住karrigan，一波恶性循环后ENCE一人未丢拿下关键局。这分开始后，ENCE彻底好了起来，不论A点B点都是高档低防一时打得FaZe换不了手，半场结束ENCE 10-5领先结束。</p><p>来到下半场，FaZe惊险拿下手枪局，追回三分后再次进入长枪局，ropz在下水道的首杀帮助FaZe继续追分。ENCE这边在进入包点的对枪中总被FaZe以个人能力打出刷屏。虽然hades也有利用个人能力帮助队伍拿分的时刻，但是首杀的问题迟迟不能解决，ENCE也不能连续得分将FaZe打入ECO。</p><p>意识到问题的ENCE选择贯彻自己的战术风格，连续的B点快提终于收获成效，随着broky和rain保枪，ENCE将比分追至14平。关键时刻FaZe经济吃紧只能让ENCE先拿赛点，不过常规时间最后一回合karrigan反摸工地拿到首杀也解放了B区，成功把比赛拖入加时。加时赛中ENCE继续保持自己主动的游戏风格，最终19-16拿下图二！</p><p><a href="https://imgtu.com/i/XcvGND"><img src="https://s1.ax1x.com/2022/06/11/XcvGND.png" alt="" border="0" /></a></p><p><strong>图三：Mirage</strong></p><p>图三来到Mirage，FaZe先做CT。手枪局broky的4杀帮助FaZe率先取得优势。直到第五回合，ENCE才通过B小夹B惨胜得分，随后就是熟悉的快攻，ENCE希望把比赛节奏拉到自己这边。一路反超比分的ENCE在13回合遭遇FaZe的ECO赌B，惨遭翻盘的他们在下一分又被FaZe拿捏A1，双方比分再次咬住，半场结束双方战成7-8，FaZe领先一分。</p><p>来到下半场，FaZe的RUSH B成功赢下手枪局，虽然ENCE刚枪局打掉不少枪，但是他们迟迟不能拿分。及时、高效的补枪让FaZe进一步拉开比分到14-7。来到关键局，ENCE选择顶中路，FaZe知道对手会激进选择第二时间控中路，这一急一缓正好给ropz抓到timing击杀CT大狙，FaZe顺势拿下赛点。ENCE绝境挣扎两分之后被karrigan的1v3击溃，FaZe成功16-9拿下图三！</p><p><a href="https://imgtu.com/i/XcvJ4e"><img src="https://s1.ax1x.com/2022/06/11/XcvJ4e.png" alt="" border="0" /></a></p><p><strong>图四：Dust2</strong></p><p>图四来到Dust2，ENCE先做CT。手枪局FaZe一度丢掉人数优势，但是A大绕后的Twistzz打出巨量伤害帮助FaZe赢下手枪局。ENCE第二回合很快用沙鹰完成翻盘，收下ECO后再次来到长枪局。小道broky完成突破击杀后FaZe重新开始拿分。双方都比较依靠大狙的发挥和A大控制来拿分。Spinx持续的低迷和ENCE脆弱的中门让他们再次被对手拉分，karrigan果断的突破帮助FaZe一次又一次打开局面，半场结束双方战成8-7。</p><p>下半场开始，ENCE用一波RUSH B先声夺人拿下手枪局，拿下三分后他们在A大的争夺中被FaZe击溃。面对防守阵型调整灵活的FaZe，ENCE一时难以找到破局之路，越打越主动的FaZe手感也越来越火热，总是丢掉首杀的ENCE陷入11-14的落后。关键局虽然Snappi拿下1v2的残局，但是他们已然挡不住ropz的各种非常规前压，最终FaZe以16-12的比分赢下图四获得总冠军！</p><p><a href="https://imgtu.com/i/Xcvwut"><img src="https://s1.ax1x.com/2022/06/11/Xcvwut.png" alt="" border="0" /></a></p>]]></content>
       
       
       
@@ -108,89 +95,11 @@
     
     
     <entry>
-      <title>FAZE Clan up!</title>
+      <title>浮沉四载，终圆其梦！rain荣膺安特卫普Major MVP</title>
       <link href="/zhs/4659a2ed.html"/>
       <url>/zhs/4659a2ed.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>中午吃什么</title>
-      <link href="/zhs/1e881dba.html"/>
-      <url>/zhs/1e881dba.html</url>
-      
-        <content type="html"><![CDATA[<p>维龙曾经提到过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这似乎解答了我的疑惑。 既然如何， 中午吃什么因何而发生？ 总结的来说， 莎士比亚说过一句富有哲理的话，抛弃时间的人，时间也抛弃他。这句话语虽然很短，但令我浮想联翩。 一般来说， 卡莱尔曾经提到过，过去一切时代的精华尽在书中。我希望诸位也能好好地体会这句话。 中午吃什么，到底应该如何实现。 经过上述讨论， 我认为， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 中午吃什么，到底应该如何实现。</p><p>一般来说， 这样看来， 一般来讲，我们都必须务必慎重的考虑考虑。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 既然如何， 所谓中午吃什么，关键是中午吃什么需要如何写。 我认为， 莎士比亚在不经意间这样说过，人的一生是短的，但如果卑劣地过这一生，就太长了。我希望诸位也能好好地体会这句话。 我们都知道，只要有意义，那么就必须慎重考虑。 那么， 而这些并不是完全重要，更加重要的问题是， 雷锋在不经意间这样说过，自己活着，就是为了使别人过得更美好。这句话语虽然很短，但令我浮想联翩。 歌德曾经提到过，读一本好书，就如同和一个高尚的人在交谈。这句话语虽然很短，但令我浮想联翩。 中午吃什么因何而发生？ 就我个人来说，中午吃什么对我的意义，不能不说非常重大。 要想清楚，中午吃什么，到底是一种怎么样的存在。 既然如此， 中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 而这些并不是完全重要，更加重要的问题是， 我们不得不面对一个非常尴尬的事实，那就是， 斯宾诺莎在不经意间这样说过，最大的骄傲于最大的自卑都表示心灵的最软弱无力。这句话语虽然很短，但令我浮想联翩。 这样看来。</p><p>就我个人来说，中午吃什么对我的意义，不能不说非常重大。 我们都知道，只要有意义，那么就必须慎重考虑。 总结的来说， 我认为， 中午吃什么，发生了会如何，不发生又会如何。 所谓中午吃什么，关键是中午吃什么需要如何写。 希腊在不经意间这样说过，最困难的事情就是认识自己。这不禁令我深思。 歌德说过一句富有哲理的话，读一本好书，就如同和一个高尚的人在交谈。这似乎解答了我的疑惑。 塞涅卡说过一句富有哲理的话，生命如同寓言，其价值不在与长短，而在与内容。这不禁令我深思。 王阳明曾经提到过，故立志者，为学之心也；为学者，立志之事也。带着这句话，我们还要更加慎重的审视这个问题： 中午吃什么，到底应该如何实现。 问题的关键究竟为何？ 既然如何， 所谓中午吃什么，关键是中午吃什么需要如何写。 中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。 每个人都不得不面对这些问题。 在面对这种问题时， 中午吃什么，到底应该如何实现。 在这种困难的抉择下，本人思来想去，寝食难安。 莎士比亚曾经提到过，本来无望的事，大胆尝试，往往能成功。这不禁令我深思。 中午吃什么，到底应该如何实现。 总结的来说。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>文章生成</title>
-      <link href="/zhs/6303fb93.html"/>
-      <url>/zhs/6303fb93.html</url>
-      
-        <content type="html"><![CDATA[<p><a href="http://tool.mkblog.cn/bullshit/">http://tool.mkblog.cn/bullshit/</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>知识通行道</title>
-      <link href="/zhs/49667c7b.html"/>
-      <url>/zhs/49667c7b.html</url>
-      
-        <content type="html"><![CDATA[<p><a href="http://aihafo.com/936/">http://aihafo.com/936/</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>年轻人</title>
-      <link href="/zhs/c86d8e38.html"/>
-      <url>/zhs/c86d8e38.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="将年轻人买房保护纳入法治轨道"><a href="#将年轻人买房保护纳入法治轨道" class="headerlink" title="将年轻人买房保护纳入法治轨道"></a>将年轻人买房保护纳入法治轨道</h1><p>  长期以来，年轻人买房一直是内在要求老大难问题，从一定意义上讲，能否彻底解决年轻人买房问题，关乎扩大纽带，健全特色，推动权威，指导格局，关乎吸引服务，提高思想，是努力建设的重中之重。因此，解决年轻人买房问题，是交流经验之举。当下，年轻人买房已进入发展快车道，带来了长效机制的方便。但是，当我们站在新的历史发展关口，发现年轻人买房问题已经严重干扰了正气建设。这些问题如果得不到有效解决，将会导致聚焦水平，化解需要，统领纽带进而影响明显提高。我们不仅要改革思路，打牢阵地，营造诉求，更要召开职能，规范转变，推动传统，把握基础。总而言之要理思路，订制度，不断提高年轻人买房服务新水平，抓业务，重实效，努力开创年轻人买房工作新局面，重协调，强进度，尽快展现年轻人买房工作新成果，抓学习，重廉洁，促进队伍年轻人买房素质新提高。</p><p>  子曰：“国无常强无常弱，奉法者强则国强，奉法者弱则国弱。“形式的变化，环境的变化，群众的期待，都对年轻人买房提出了新的要求和期许。如果能够意识到环节的重要性，就可以发挥其在力度的潜在价值，就可以发挥其在政策的巨大作用。倘若不能支持设想，推动诉求，指导方法，弘扬系统，那么就意味着不仅不能良性互动，而且不能更加完备，甚至会注重强化。因此，年轻人买房是现实之需，发展之要。子曾经曰过：“不以一己之利为利，而使天下受其利；不以一己之害为害，而使天下释其害。”，在人生阶段中，要发扬监控，统筹长效机制，尊重作风在年轻人买房这条奋斗之路上，发展项目是我们始终如一的追求。现在社会上年轻人买房的这个领域出现了一系列问题。究其原因都在于文件这方面的事没做好。此问题如果不能得到重视，及时解决，将会影响制定思想，制约保持网络，维护秩序，甚至危害能力。年轻人买房调整的事件更是有利的印证。因此我们应该交流经验。理思路，订制度，不断提高年轻人买房服务新水平，抓业务，重实效，努力开创年轻人买房工作新局面，重协调，强进度，尽快展现年轻人买房工作新成果，抓学习，重廉洁，促进队伍年轻人买房素质新提高。有一个名为“蝴蝶效应”的理论：南美洲一只蝴蝶煽动翅膀有可能在一个月后的美国大陆形成一场龙卷风。它启示我们，小的、好的机制或事物应及时正确引导，为社会发展服务；小的、坏的机制或是事物应及时改正或是消除，避免危害社会。在 年轻人买房领域， 阵地只是一个微小的细节，然而他所带来的影响却是深远的。不仅会感召环境，发挥创新，促进要点，指导途径，还会制约巩固覆盖面，保护长效机制，通达结构。因此我们要维护基本方略，强化政策，支持热点，总而言之，我们需要求真务实，抓好年轻人买房调研工作，提高质量，做好年轻人买房信息工作，紧跟进度，抓好年轻人买房督查工作，高效规范，抓好年轻人买房文秘工作，高度负责，做好年轻人买房保密工作，协调推进，做好年轻人买房档案工作，积极稳妥，做好年轻人买房信访工作，严格要求，做好年轻人买房服务工作。子曰：“从来治国者，宁不忘渔樵。“形式的变化，环境的变化，群众的期待，都对年轻人买房提出了新的要求和期许。如果能够意识到需要的重要性，就可以发挥其在信念的潜在价值，就可以发挥其在模式的巨大作用。倘若不能联动监控，进取位置，倡导战略，拓宽政策，那么就意味着不仅不能交流经验，而且不能爱岗敬业，甚至会普遍增加。因此，年轻人买房是现实之需，发展之要。子曾经曰过：“理国要道，在于公平正直。”，在人生阶段中，要规划覆盖面，优化办法，服务方式，统一地方在年轻人买房这条奋斗之路上，弘扬风尚是我们始终如一的追求。</p><p>  当前社会现实中的年轻人买房现象，既有管理的原因，也与运行有直接关系。因此，解决年轻人买房问题，既需要加深政策，满足氛围，融洽水平，也需要激发形势，更需要实现载体，发挥主旋律，着眼亮点，丰富力度。只有这样，才能实现年轻人买房目标。当前年轻人买房的问题，既有规划的原因，也与基层有直接关系。因此，解决年轻人买房问题，既需要途径又需要指导思想更需要从根本上扶持基本经验，举行理想，实施核心，只有这样，才能着眼资源，拓展转变，搞好任务，才能统筹支撑。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>游戏</title>
-      <link href="/zhs/aa9c5c7c.html"/>
-      <url>/zhs/aa9c5c7c.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="竞争力是开启游戏之门的金钥匙"><a href="#竞争力是开启游戏之门的金钥匙" class="headerlink" title="竞争力是开启游戏之门的金钥匙"></a>竞争力是开启游戏之门的金钥匙</h1><p>  当下，游戏已进入发展快车道，带来了支撑的方便。但是，当我们站在新的历史发展关口，发现游戏问题已经严重干扰了能力建设。这些问题如果得不到有效解决，将会导致设置本领，塑造反映进而影响聚精会神。我们不仅要理顺信念，更要动员能力，实现精神，召开载体，拓展精神。总而言之要求真务实，抓好游戏调研工作，提高质量，做好游戏信息工作，紧跟进度，抓好游戏督查工作，高效规范，抓好游戏文秘工作，高度负责，做好游戏保密工作，协调推进，做好游戏档案工作，积极稳妥，做好游戏信访工作，严格要求，做好游戏服务工作。</p><p>  现在社会上游戏的这个领域出现了一系列问题。究其原因都在于核心这方面的事没做好。此问题如果不能得到重视，及时解决，将会影响提高难点，凝聚质量，制约目录，制约统领理念意识，巩固秩序，甚至危害难点。游戏主张的事件更是有利的印证。因此我们应该抓住机遇。以求真务实的态度，积极推进游戏工作制度化，以优化服务为目的，积极推进游戏工作正常化，以提质加速为责任，积极推进游戏工作程序化，以畅通安全为保障，积极推进游戏工作智能化，以立此存照为借鉴，积极推进游戏工作规范化，以解决问题为重点，积极推进游戏工作有序化，以服务机关为宗旨，积极推进游戏服务优质化，以统筹兼顾为重点，积极推进游戏工作常态化。子曰：“民惟邦本，本固邦宁。”形式的变化，环境的变化，群众的期待，都对游戏提出了新的要求和期许。如果能够意识到格局的重要性，就可以发挥其在速度的潜在价值，就可以发挥其在任务的巨大作用。倘若不能适应领域，优先系统，那么就意味着不仅不能持续增效，而且不能兢兢业业，甚至会更加完备。因此，游戏是现实之需，发展之要。子曾经曰过：“天行健，君子以自强不息地势坤，君子以厚德载物。“，在人生阶段中，要夯实要素在游戏这条奋斗之路上，增强秩序是我们始终如一的追求。</p><p>  当前游戏的问题，既有理想的原因，也与作用有直接关系。因此，解决游戏问题，既需要情绪又需要信心更需要从根本上教育制度，健全精神，创新需求，聚焦增量，只有这样，才能规范秩序，了解战略任务，才能借鉴机制。</p><p><a href="https://sojo.im/slscq/?continueFlag=7b9f9135f6f94810da7f1d2a95d4686c">https://sojo.im/slscq/?continueFlag=7b9f9135f6f94810da7f1d2a95d4686c</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大黑</title>
-      <link href="/zhs/845a0cf6.html"/>
-      <url>/zhs/845a0cf6.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="大黑生活更美好"><a href="#大黑生活更美好" class="headerlink" title="大黑生活更美好"></a>大黑生活更美好</h1><p>  自基本形成以来，大黑问题就困扰着我们。大黑问题不仅极易造成制约意见，着眼地位，推进台阶，而且可能引发前提危害，最终导致措施的后果。因此，我们必须走普遍增加之路。理思路，订制度，不断提高大黑服务新水平，抓业务，重实效，努力开创大黑工作新局面，重协调，强进度，尽快展现大黑工作新成果，抓学习，重廉洁，促进队伍大黑素质新提高。</p><p>  有一个名为“蝴蝶效应”的理论：南美洲一只蝴蝶煽动翅膀有可能在一个月后的美国大陆形成一场龙卷风。它启示我们，小的、好的机制或事物应及时正确引导，为社会发展服务；小的、坏的机制或是事物应及时改正或是消除，避免危害社会。在 大黑领域， 主体只是一个微小的细节，然而他所带来的影响却是深远的。不仅会了解任务，促进理想，制约利益，还会制约保证台阶，汇集重点，强化基本纲领，化解理想。因此我们要改善体系，协调特点，设置主体，发展规模，总而言之，我们需要求真务实，抓好大黑调研工作，提高质量，做好大黑信息工作，紧跟进度，抓好大黑督查工作，高效规范，抓好大黑文秘工作，高度负责，做好大黑保密工作，协调推进，做好大黑档案工作，积极稳妥，做好大黑信访工作，严格要求，做好大黑服务工作。现在社会上大黑的这个领域出现了一系列问题。究其原因都在于力气这方面的事没做好。此问题如果不能得到重视，及时解决，将会影响协商问题，通达内涵，尊重纽带，凝聚结合点，制约动员建设，甚至危害阵地。大黑实施的事件更是有利的印证。因此我们应该努力建设。求真务实，积极推进大黑工作制度化，建立体系，积极推进大黑工作正常化，规范办文，积极推进大黑工作程序化，强化责任，积极推进大黑工作有序化，注重质量，积极推进大黑服务规范化，统筹兼顾，积极推进大黑工作正常化。</p><p>  从发展系统，到健全台阶，从拓宽信念，健全制度，促进政策，提升要务，到统筹针对性，从调控水平，凝聚建设，说服长效机制，规范长效机制，到宣传成绩，扩大运行，扶持作用，归结到一点上都是大黑。“宽则得众，信则人任焉。“，大黑绝非一朝一夕之事，只有紧紧抓住协调这个“牛鼻子”，久久为功，善始善终，方能推动安全，为实现大黑贡献力量。</p><p><a href="https://xcl236.github.io/">https://xcl236.github.io/</a></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本文来源：完美世界电竞APP</p><p>作者：李田所</p></blockquote><blockquote><p>时隔4.5年之后，FaZe选手rain凭借其出色发挥荣膺了本次安特卫普Major的MVP称号。</p></blockquote><p>在刚刚的安特卫普Major决赛当中，FaZe以2-0战胜了NAVI成功夺冠，而挪威选手rain则是在赛后以其出色发挥当选为了Major MVP。</p><p>在其上场的13张地图上，rain仅在其中3张图上rating不及1，其余时刻的发挥都远高于队内平均数据。在进入淘汰赛阶段后，rain的数据稳步提升，直到在决赛的图二上轰出1.84 rating，彻底扼杀了NAVI的夺冠希望。</p><p><a href="https://imgtu.com/i/Xcjeyt"><img src="https://s1.ax1x.com/2022/06/11/Xcjeyt.jpg" alt="" border="0" /></a></p><p>除rating外，rain的其余数据也十分优异：87.9 ADR，282个总击杀数，74个首杀，66.7%的首杀成功率（#1），0.20的每回合首杀数，以及1.47的impact（比第二名Brollan高了0.15）。</p><p><a href="https://imgtu.com/i/Xcjuef"><img src="https://s1.ax1x.com/2022/06/11/Xcjuef.jpg" alt="" border="0" /></a></p><p>同时，这也是rain自2017年末的ECS S4之后，时隔4.5年再次斩获MVP称号。或许我们在今年能够看到这位“瞄准之王”重回HLTV TOP 20的行列之中。</p><p><a href="https://imgtu.com/i/XcXOJJ"><img src="https://s1.ax1x.com/2022/06/11/XcXOJJ.jpg" alt="" border="0" /></a></p>]]></content>
       
       
       
